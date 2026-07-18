@@ -1,0 +1,79 @@
+:root {   
+    --bg-color: #f3f4f6;
+    --card-bg: #ffffff;
+    --text-main: #1f2937;
+    --text-muted: #6b7280;
+    --border-radius: 16px;
+    --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 10px 15px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+body  {
+    background: var(--bg-color);
+    min-height: 100vh;
+}
+.post {
+    padding: 2rem 5%;
+}
+    
+.card-list {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.card {
+    position: relative;
+    width: 30rem;
+    padding: 2.3rem;
+    background: var(--card-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+    flex-grow: 1
+}
+.card:hover {
+    transform: translateY(-.5rem);
+    box-shadow: var(--shadow-md);
+}
+.card h2 {
+    margin-bottom: 1rem;
+}
+.card p {
+    margin-bottom: 1rem;
+    color: var(--text-muted);
+}
+.active {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    font-size: 1.2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.icon-delete {
+    color: rgb(215, 34, 34);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.icon-pencil {
+    color: rgb(39, 193, 39);
+    cursor: pointer;
+    transition: var(--transition);
+}
+.icon-delete:hover, .icon-pencil:hover {
+    transform: scale(1.2);
+}
+.post-form {
+    display: flex;
+    padding: 1rem;
+}
