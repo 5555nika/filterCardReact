@@ -1,6 +1,10 @@
 # Project Overview
 A functional React application featuring usr authenticaltion , protected routing, and a custom UI componenent library.
 
+ # How to Run
+🚀  [Посмотреть проект вживую (Live Demo)](https://5555nika.github.io/filterCardReact/) 
+
+
 ## Features
 - Authentication: Centralized management using AuthContext with automatic localStorage persistence.
 - Protected Routing: Role-based navigation control using react-router-dom.
