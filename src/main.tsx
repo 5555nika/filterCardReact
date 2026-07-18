@@ -10,7 +10,7 @@ import { AuthProvider } from './context.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <AuthProvider>
-    <BrowserRouter>
+    <BrowserRouter basename="/filterCardReact">
         <App />
     </BrowserRouter>
     </AuthProvider>
