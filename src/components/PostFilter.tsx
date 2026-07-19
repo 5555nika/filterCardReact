@@ -12,7 +12,7 @@ export interface IPostFilter {
 export const PostFilter = ({ filter, setFilter }: IPostFilter) => {
 
     return (
-        <form className="post-form">
+        <form > 
             <MyInput 
             placeholder="Search..."
             value={filter.query} 
