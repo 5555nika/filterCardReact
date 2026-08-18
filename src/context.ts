@@ -1,10 +1,7 @@
 import { createContext, useContext } from "react";
+import type { IContext } from "./models/IContext";
 
-export interface IContext {
-    isAuth: boolean,
-    setIsAuth: (isAuth: boolean) => void,
-    isLoading: boolean
-}
+
 
 export const AuthContext = createContext<IContext>({
     isAuth: false,
