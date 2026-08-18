@@ -1,5 +1,18 @@
 .myInp {
     padding: 10px 15px;
+    font-size: 14px;
+    font-weight: 400;
     border: 1px solid teal;
     border-radius: .5rem;
+    transition: box-shadow .2s easy
+}
+
+.myInp:focus {
+    border-color: #3498db; /* Красивая синяя граница при вводе */
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3); /* Легкое свечение */
+}
+
+.myInput::placeholder {
+    color: #95a5a6; /* Мягкий серый цвет для подсказки */
+    opacity: 0.8;
 }
