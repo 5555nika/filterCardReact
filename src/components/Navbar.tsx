@@ -1,11 +1,10 @@
-import { useContext } from "react"
 import { NavLink } from "react-router-dom"
-import { AuthContext } from "../context"
+import { useAuth } from "../context"
 import classes from './Navbar.module.css'
 
 export const Navbar = () => {
 
-    const { setIsAuth, isAuth } = useContext(AuthContext)
+    const { setIsAuth, isAuth } = useAuth()
 
     const handleClick = () => {
         localStorage.removeItem('auth')
