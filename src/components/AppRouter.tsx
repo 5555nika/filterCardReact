@@ -1,10 +1,15 @@
 import { Routes, Route, Navigate } from "react-router-dom"
 import { privateRouter, publicRouter } from "../routes"
 import { useAuth } from "../context"
+import { MyLoader } from "./UI/loader/MyLoader"
 
 export const AppRouter = () => {
 
-    const { isAuth } = useAuth()
+    const { isAuth, isLoading } = useAuth()
+
+    if (isLoading) {
+        return <MyLoader />
+    }
 
     return (
         <Routes>
