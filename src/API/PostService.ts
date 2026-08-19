@@ -19,11 +19,13 @@ export class PostService {
         return response
 
     }
+
     static async   getPostId(id: number): Promise<AxiosResponse<IPost>>  {
         const response = await axios.get<IPost>('https://jsonplaceholder.typicode.com/posts/' + id) 
         return response
 
     }
+    
     static async   getPostComments(id: number): Promise<AxiosResponse<IComments[]>>  {
         const response = await axios.get<IComments[]>('https://jsonplaceholder.typicode.com/posts/' + id + '/comments') 
         return response
